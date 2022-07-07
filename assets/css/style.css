@@ -1,4 +1,3 @@
-
 * {
 background-color: #F5D1A1;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -7,16 +6,33 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 header{
 padding: 20px
 }
+nav {
+    border-top: solid black;
+    border-left: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
+}
+.navbar-item img {
+    height: 90px;
+    max-height: 90px;
+}
+.navbar, .navbar-item, .navbar-item img{
+    height: 90px;
+}
+.navbar {
+    height: 120px;
+}
 .navbar-brand{
 font-size: 48px;
 color: #bf3d4c;
 font:bold;
 }
 .navbar-item{
-margin: 20px;
-color:#bf3d4c;
+margin: 10px;
 font:bold;
-
+}
+.large {
+    font-size: larger;
 }
  
 header h1{
@@ -72,12 +88,7 @@ footer h2 {
 font-size: 10px;
 }
 
-.navbar-item img {
-    height: 90px;
-    max-height: 90px;
+.red {
+    color: #bf3d4c;
 }
-.navbar, .navbar-item, .navbar-item img{
-    height: 90px;
-}
-
 
