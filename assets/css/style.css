@@ -1,0 +1,8 @@
+.navbar-item img {
+    height: 90px;
+    max-height: 90px;
+}
+.navbar, .navbar-item, .navbar-item img{
+    height: 90px;
+}
+
