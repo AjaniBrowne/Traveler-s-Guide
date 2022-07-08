@@ -23,23 +23,20 @@
                                   <span class="red">AirBnB</span>  
                                 </a>
                                 <a class="navbar-item large">
-                                   <span class="red">Contact</span> 
+                                   <span id="modal-c" class="js-modal-trigger red" data-target="modal-js-contact">Contact Us</span> 
                                 </a>
                             </div>            
             </div>
         </nav>
+        <div class="photo"></div>
         <div class="hero">
             <input class="cityGeo" placeholder="where do you want to go?"></input>
             <button id="searchGeo">Search</button>
-            
-        
-
+            <input class="cityBnb" placeholder="City.."></input>
+            <button id="searchBNB">Search</button>
         </div>
         <main>
-            <div class="container">
-                <input class="cityBnb" placeholder="City.."></input>
-                <button id="searchBNB">Search</button>
-            </div>
+            
            
         </main>
         <footer>
@@ -47,7 +44,30 @@
         </footer>
 
         
-        
-        <script src="./assets/css/script.js"></script>
+        <div class="modal" id="modal-js-contact">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title no-background">Contact Us!</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <h2 class="bold no-background">Name</h2>
+                <input class="no-background modal-input" type="text" placeholder="John Cena">
+                <h2 class="bold no-background">Email</h2>
+                <input class="no-background modal-input" type="email" placeholder="example@gmail.com">
+                <h2 class="bold no-background">Phone Number</h2>
+                <input class="no-background modal-input" type="tel" placeholder="(502)-123-4567">
+                <h2 class="bold no-background">Message</h2>
+                <textarea class="no-background modal-input" type="bio" id="message"></textarea>
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Submit</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+          </div>
+        <script src="./assets/java/script.js"></script>
+        <script src="./assets/java/bulma.js"></script>
     </body>
 </html>
