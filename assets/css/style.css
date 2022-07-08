@@ -6,20 +6,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 header{
 padding: 20px
 }
-nav{
-
-}
 .navbar-brand{
 font-size: 48px;
 color: #bf3d4c;
 font:bold;
 }
 .navbar-item{
-
 margin: 20px;
 color:#bf3d4c;
 font:bold;
-
 }
  
 header h1{
