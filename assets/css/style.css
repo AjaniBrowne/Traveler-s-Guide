@@ -2,15 +2,14 @@
     background-color: #F5D1A1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+html {
+    scroll-padding-top: 125px;
+}
 header{
     padding: 20px
 }
 nav {
-border-top: solid black;
-    border-left: solid black;
-    border-right: solid black;
-    border-bottom: solid black;
+    border: solid black;
 }
 .navbar-item.large, .navbar-item {
     padding: 0px;
@@ -26,6 +25,7 @@ border-top: solid black;
 }
 .navbar {
     height: 120px;
+    position: sticky;
 }
 .navbar-brand{
     font-size: 48px;
@@ -57,7 +57,7 @@ header h1{
 .photo {
     height: 50vh;
     max-width: none;
-    margin-top: 117px;
+    margin-top: 120px;
     border: black solid;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ button:hover{
     color:#894049
 }
 footer {
-    padding: 30px;
+    padding: 20px;
     clear: both;
     text-align: center;
 }
