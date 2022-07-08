@@ -1,18 +1,22 @@
+
+//   fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", requestOptions)
+//     .then(response => response.json())
+//     .then(result => console.log(result))
+//     .catch(error => console.log('error', error));
+
+//     const options = {
+//         method: 'GET',
+//         headers: {
+//             'X-RapidAPI-Key': '95a31a0cb5mshec7999ec6d2f812p19a194jsnde5e50058307',
+//             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
+//         }
+//     };
 var requestOptions = {
     method: 'GET',
   };
-  fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", requestOptions)
-    .then(response => response.json())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '95a31a0cb5mshec7999ec6d2f812p19a194jsnde5e50058307',
-            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
-        }
-    };
-    fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', options)
+  
+  function cityBnb (cityEl) {
+fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
@@ -30,6 +34,7 @@ var requestOptions = {
         
         
         })
+    }
 
 
         var savedAirbnb = localStorage.getItem("airbnb") || [];
