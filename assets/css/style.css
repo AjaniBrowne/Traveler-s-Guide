@@ -52,6 +52,7 @@ margin-bottom: 25px;
 border: black solid;
 background-size: cover;
 background-position: center;
+background-image: url("https://th.bing.com/th/id/R.a2d54809ad1bad5eeb0726d351f05787?rik=Dmc5vIXSzc%2bb8A&pid=ImgRaw&r=0");
 
 }
 .photo {
@@ -129,4 +130,16 @@ span {
 }
 .bold {
     font-weight: bold;
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 482px){
+    
 }
