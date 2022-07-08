@@ -12,9 +12,5 @@ var requestOptions = {
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
-    fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
    
    
