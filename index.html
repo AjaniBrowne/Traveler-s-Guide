@@ -5,11 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Traveler's Guide</title>
-        <link rel="stylesheet" href="./assets/css/reset.css">
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <div container></div>
-        <script src="assets/script.js"></script>
+        <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item"><span class="red">Travel Guide</span></a>  
+                    </div>
+                        <div class="navbar-menu is-active">
+                            <div class="navbar-end">
+                                <a class="navbar-item large">
+                                    <span class="red">Geoapify</span>
+                                </a>
+                                <a class="navbar-item large">
+                                  <span class="red">AirBnB</span>  
+                                </a>
+                                <a class="navbar-item large">
+                                   <span class="red">Contact</span> 
+                                </a>
+                            </div>            
+            </div>
+        </nav>
+        <div class="hero">
+            <input class="cityGeo" placeholder="where do you want to go?"></input>
+            <button id="searchGeo">Search</button>
+            <!-- <img src="C:\Users\Meaghan\Desktop\toworkrepo\teamapi\Traveler-s-Guide\assets\css\new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg"> -->
+            
+        </div>
+        <main>
+            <div class="container">
+                <input id="cityBnb" placeholder="City.."></input>
+                <button id="searchBNB" type="submit">Search</button>
+            </div>
+            <div id="currentRender"></div>
+            <div>
+                <ul class="col-8 mb-3"></ul>
+                <div class="airbnb-container">
+                    <div class="airbnb-item"> 
+           
+        </main>
+        <footer>
+            <h2>Made with ❤️️ by UCF Students</h2>
+        </footer>
+
+        
+        
+        <script src="assets/java/script.js"></script>
     </body>
 </html>
