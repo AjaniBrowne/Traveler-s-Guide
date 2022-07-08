@@ -131,3 +131,15 @@ span {
 .bold {
     font-weight: bold;
 }
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 482px){
+    
+}
