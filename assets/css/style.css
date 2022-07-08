@@ -1,14 +1,13 @@
 * {
-background-color: #F5D1A1;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-display: flex;
+    background-color: #F5D1A1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
-padding: 20px
+    padding: 20px
 }
 nav {
-    border-top: solid black;
+border-top: solid black;
     border-left: solid black;
     border-right: solid black;
     border-bottom: solid black;
@@ -29,48 +28,48 @@ nav {
     height: 120px;
 }
 .navbar-brand{
-font-size: 48px;
-color: #bf3d4c;
-font:bold;
+    font-size: 48px;
+    color: #bf3d4c;
+    font:bold;
 }
 .navbar-item{
-margin: 10px;
-font:bold;
+    margin: 10px;
+    font:bold;
 }
 .large {
     font-size: larger;
 }
  
 header h1{
-font-size: 40px;
-color: #bf3d4c;
+    font-size: 40px;
+    color: #bf3d4c;
 }
 
 .hero{
-height: 100vh;
-width: 100%;
-margin-bottom: 25px;
-border: black solid;
-background-size: cover;
-background-position: center;
-background-image: url("https://th.bing.com/th/id/R.a2d54809ad1bad5eeb0726d351f05787?rik=Dmc5vIXSzc%2bb8A&pid=ImgRaw&r=0");
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 25px;
+    border: black solid;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://th.bing.com/th/id/R.a2d54809ad1bad5eeb0726d351f05787?rik=Dmc5vIXSzc%2bb8A&pid=ImgRaw&r=0");
 }
 .photo {
-height: 50vh;
-max-width: none;
-margin-top: 117px;
-border: black solid;
-background-size: cover;
-background-position: center;
-background-image: url("https://www.northsidesun.com/sites/default/files/Airbnb1.jpg");
+    height: 50vh;
+    max-width: none;
+    margin-top: 117px;
+    border: black solid;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://www.northsidesun.com/sites/default/files/Airbnb1.jpg");
 } 
 
 input {
-border-radius: 20px;
-width: 75%;
-height: 20px;
-background-color:antiquewhite;
-justify-content: center;
+    border-radius: 20px;
+    width: 75%;
+    height: 20px;
+    background-color:antiquewhite;
+    justify-content: center;
 }
 button{
     color: #F5D1A1;
@@ -86,13 +85,13 @@ button:hover{
     color:#894049
 }
 footer {
-padding: 30px;
-clear: both;
-text-align: center;
+    padding: 30px;
+    clear: both;
+    text-align: center;
 }
     
 footer h2 {
-font-size: 10px;
+    font-size: 10px;
 }
 
 .red {
@@ -131,4 +130,16 @@ span {
 }
 .bold {
     font-weight: bold;
+}
+
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 482px){
+    
 }
