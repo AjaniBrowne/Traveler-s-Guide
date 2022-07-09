@@ -33,11 +33,17 @@ nav {
     font:bold;
 }
 .navbar-item{
+<<<<<<< HEAD
+margin: 20px;
+color:#bf3d4c;
+font:bold;
+=======
     margin: 10px;
     font:bold;
 }
 .large {
     font-size: larger;
+>>>>>>> main
 }
  
 header h1{
