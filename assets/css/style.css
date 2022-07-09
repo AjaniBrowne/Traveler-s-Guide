@@ -59,15 +59,42 @@ header h1{
     background-size: cover;
     background-position: center;
 }
-.photo {
+/*.photo {
     height: 50vh;
     max-width: none;
     margin-top: 120px;
     border: black solid;
     background-size: cover;
     background-position: center;
-    background-image: url("https://www.northsidesun.com/sites/default/files/Airbnb1.jpg");
-} 
+} */
+#searchGeo{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    right: 50%;
+    filter:blur(.8px);
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    width: 300px;
+    height: 70px;
+    font-size: xx-large;
+    border-radius: 20px;
+    font:bolder;
+    color:black;
+    background:transparent;
+    border-style:groove;
+    box-shadow: 10px;
+}
+#Geo{
+    position: relative;
+}
+#GeoImg{
+   position: relative; 
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+}
 
 input {
     border-radius: 20px;
@@ -76,9 +103,8 @@ input {
     background-color:antiquewhite;
     justify-content: center;
 }
-button{
-    color: #F5D1A1;
-    background-color: #bf3d4c;
+#searchBnb{
+
     width: 23%;
     height: 30px;
     border-radius: 20px;
