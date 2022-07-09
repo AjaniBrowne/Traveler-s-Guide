@@ -8,6 +8,7 @@
         <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="'stylesheet" href="./assets/images/">
     </head>
     <body>
         <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
@@ -30,6 +31,19 @@
                             </div>            
             </div>
         </nav>
+
+       <!-- <div class="photo"></div> -->
+        <div class="hero">
+          <div id="bnb">
+            <img id="bnbImg" src="./assets/images/New York City.jpg" width="100%">
+            <input class="cityGeo" placeholder="where do you want to go?"></input>
+            <button class="js-modal-trigger red" data-target="modal-js-geo" id="searchBnb">Search</button>
+          </div>
+          <div id="Geo">
+            <img id="GeoImg" src="https://img.freepik.com/free-photo/tourist-holding-map-street_23-2148232480.jpg?w=2000" height="30%" width="100%" alt="girl holding attraction map">
+            <button id="searchGeo">Entertainment</button>
+          </div>
+
         <div class="photo"></div>
         <div class="hero" style = "background-image: url('./assets/images/New York City.jpg');">
             <input class="cityBnb" placeholder="City.."></input>
@@ -78,10 +92,8 @@
                   </button>
                 </div>
               </nav>
+
         </div>
-        <footer>
-            <h2>Made with ❤️️ by UCF Students</h2>
-        </footer>
 
         <div class="modal" id="modal-js-geo">
             <div class="modal-background"></div>
