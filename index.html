@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Traveler's Guide</title>
-        <link rel="stylesheet" href="./assets/css/reset.css">
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
@@ -18,7 +18,7 @@
                     </div>
                         <div class="navbar-menu is-active">
                             <div class="navbar-end">
-                                <a class="navbar-item large" href="#searchGeo">
+                                <a class="navbar-item large" href="#cityGeo">
                                     <span class="red"><strong>Geoapify</strong></span>
                                 </a>
                                 <a class="navbar-item large" href="#searchBNB">
@@ -31,21 +31,32 @@
             </div>
         </nav>
         <div class="photo"></div>
-        <div class="hero">
+        <div class="hero" style = "background-image: url('./assets/images/New York City.jpg');">
             <input class="cityGeo" placeholder="where do you want to go?"></input>
-            <button id="searchGeo">Search</button>
+            <button class="js-modal-trigger red" data-target="modal-js-geo" id="searchGeo">Search</button>
             <input class="cityBnb" placeholder="City.."></input>
             <button id="searchBNB">Search</button>
+    
         </div>
-        <main>
-            
-           
-        </main>
         <footer>
             <h2>Made with ❤️️ by UCF Students</h2>
         </footer>
 
-        
+        <div class="modal" id="modal-js-geo">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title no-background">Geoapify</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Submit</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+        </div>
         <div class="modal" id="modal-js-contact">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -68,7 +79,11 @@
                 <button class="button">Cancel</button>
               </footer>
             </div>
+
           </div>
+
+        </div>
+
         <script src="./assets/javascript/script.js"></script>
         <script src="./assets/javascript/bulma.js"></script>
     </body>
