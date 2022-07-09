@@ -31,15 +31,30 @@
         <div class="photo"></div>
         <div class="hero" style = "background-image: url('./assets/images/New York City.jpg');">
             <input class="cityGeo" placeholder="where do you want to go?"></input>
-            <button id="searchGeo">Search</button>
+            <button class="js-modal-trigger red" data-target="modal-js-geo" id="searchGeo">Search</button>
             <input class="cityBnb" placeholder="City.."></input>
             <button id="searchBNB">Search</button>
+    
         </div>
         <footer>
             <h2>Made with ❤️️ by UCF Students</h2>
         </footer>
 
-        
+        <div class="modal" id="modal-js-geo">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title no-background">Geoapify</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Submit</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+        </div>
         <div class="modal" id="modal-js-contact">
             <div class="modal-background"></div>
             <div class="modal-card">
@@ -62,7 +77,7 @@
                 <button class="button">Cancel</button>
               </footer>
             </div>
-          </div>
+        </div>
         <script src="./assets/javascript/script.js"></script>
         <script src="./assets/javascript/bulma.js"></script>
     </body>
