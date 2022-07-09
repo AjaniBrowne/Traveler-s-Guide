@@ -6,48 +6,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Traveler's Guide</title>
         <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">Travel Guide
-                </div>
-                <div class="navbar-menu is active">
-                  <div class="navbar-start">
-                        <a class="navbar-item">
-                      Geoapify
-                         </a>
-                        <a class="navbar-item">
-                      airBnB
-                        </a>
-                        <a class="navbar-item">
-                        contact
-                        </a>
+        <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="https://i.pinimg.com/originals/47/38/f4/4738f4e1f2a0217f26495b7a8de5d564.png" alt="globe with pins for different destinations" width="90" height="30">
+                  <span class="red">Travel Guide</span></a>  
                     </div>
-                    <div class="navbar-end"></div>
-                </div>
-            </nav>
-
-        </header>
-
+                        <div class="navbar-menu is-active">
+                            <div class="navbar-end">
+                                <a class="navbar-item large" href="#searchGeo">
+                                    <span class="red"><strong>Geoapify</strong></span>
+                                </a>
+                                <a class="navbar-item large" href="#searchBNB">
+                                  <span class="red"><strong>AirBnB</strong></span>  
+                                </a>
+                                <a class="navbar-item large">
+                                   <span id="modal-c" class="js-modal-trigger red" data-target="modal-js-contact"><strong>Contact Us</strong></span> 
+                                </a>
+                            </div>            
+            </div>
+        </nav>
+        <div class="photo"></div>
         <div class="hero">
             <input class="cityGeo" placeholder="where do you want to go?"></input>
             <button id="searchGeo">Search</button>
-            
-        
-
+            <input class="cityBnb" placeholder="City.."></input>
+            <button id="searchBNB">Search</button>
         </div>
         <main>
-            <div class="container">
-                <input class="cityBnb" placeholder="City.."></input>
-                <button id="searchBNB">Search</button>
-            </div>
+            
            
         </main>
         <footer>
             <h2>Made with ❤️️ by UCF Students</h2>
         </footer>
+
+        
+        <div class="modal" id="modal-js-contact">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+              <header class="modal-card-head">
+                <p class="modal-card-title no-background">Contact Us!</p>
+                <button class="delete" aria-label="close"></button>
+              </header>
+              <section class="modal-card-body">
+                <h2 class="bold no-background">Name</h2>
+                <input class="no-background modal-input" type="text" placeholder="John Cena">
+                <h2 class="bold no-background">Email</h2>
+                <input class="no-background modal-input" type="email" placeholder="example@gmail.com">
+                <h2 class="bold no-background">Phone Number</h2>
+                <input class="no-background modal-input" type="tel" placeholder="(502)-123-4567">
+                <h2 class="bold no-background">Message</h2>
+                <textarea class="no-background modal-input" type="bio" id="message"></textarea>
+              </section>
+              <footer class="modal-card-foot">
+                <button class="button is-success">Submit</button>
+                <button class="button">Cancel</button>
+              </footer>
+            </div>
+          </div>
+        <script src="./assets/javascript/script.js"></script>
+        <script src="./assets/javascript/bulma.js"></script>
     </body>
-    <script src="./script.js"></script>
 </html>
