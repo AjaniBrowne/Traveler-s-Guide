@@ -45,7 +45,21 @@ font:bold;
     font-size: larger;
 >>>>>>> main
 }
- 
+.panel {
+    width: 30%;
+    float: left;
+    margin: 25px;
+    border-radius: 8px;
+}
+.panel-block, .panel-tabs a, .panel-tabs, p{
+    background-color: white;
+}
+.panel-block input {
+    border-radius: 5px;
+}
+.buttons {
+    display: block;
+}
 header h1{
     font-size: 40px;
     color: #bf3d4c;
