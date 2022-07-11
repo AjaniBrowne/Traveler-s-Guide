@@ -8,40 +8,7 @@ var requestOptions = {
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
-   
-
-/*    fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', information)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err)); 
-   
-
-
     
-  function cityBnb (cityEl) {
-fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", options)
-
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-
-
-        var searchBNB = document.getElementById('searchBNB');
-
-
-        searchBNB.addEventListener('click', function (event) {
-        
-            event.preventDefault();
-        
-            var input = document.getElementById('cityBnb').value;
-            cityBnb(input)
-          //console.log(input)
-        
-        
-        })
-    }
-
-*/
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
     airBnb = savedAirbnb;
