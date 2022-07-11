@@ -71,7 +71,17 @@ function inputcity() {
     
 }
 function getProperty(identifier) {
+
     fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information)
+
+    const information2 = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '3cdbe490ddmsh751dfcb32382a4fp1f05c7jsn32c79cfcfe7a',
+            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
+        }
+    };
+ fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information2)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));

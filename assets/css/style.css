@@ -80,15 +80,15 @@ header h1{
     top:50%;
     left: 50%;
     right: 50%;
-    filter:blur(.8px);
+    filter:blur(.5px);
     justify-content: center;
-    cursor: pointer;
+    cursor:grab;
     overflow: hidden;
     width: 300px;
     height: 70px;
     font-size: xx-large;
     border-radius: 20px;
-    font:bolder;
+    font-size:40px;
     color:black;
     background:transparent;
     border-style:groove;
@@ -102,23 +102,26 @@ header h1{
    margin-left: auto;
    margin-right: auto;
    margin-top: 20px;
+   filter: blur(2px);
 }
 
-input {
-    border-radius: 20px;
-    width: 75%;
-    height: 20px;
+.cityBnb {
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
     background-color:antiquewhite;
     justify-content: center;
 }
-#searchBnb{
+#searchBNB{
 
-    width: 23%;
-    height: 30px;
-    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
     justify-content: center;
     padding: 3px;
-
+    background-image: url(https://recentlyheard.com/wp-content/uploads/2022/05/20-Best-Travel-Apps-In-India-To-Make-Your-Trips.png);
+    background-position: center;
+    background-size: cover;
 }
 button:hover{
     color:#894049
