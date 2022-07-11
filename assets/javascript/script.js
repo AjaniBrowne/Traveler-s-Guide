@@ -7,8 +7,16 @@ var requestOptions = {
   fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", requestOptions)
     .then(response => response.json())
     .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-    
+    .catch(error => console.log('error', error))
+   
+    const information = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'a4d6bc9b41msh312d9c1f7ef35a0p11686fjsn1be2f214b1a1',
+            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
+        }
+    };
+
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
     airBnb = savedAirbnb;
