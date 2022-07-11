@@ -7,15 +7,8 @@ var requestOptions = {
   fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", requestOptions)
     .then(response => response.json())
     .then(result => console.log(result))
-    .catch(error => console.log('error', error))
-   
-    const information = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'a4d6bc9b41msh312d9c1f7ef35a0p11686fjsn1be2f214b1a1',
-            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
-        }
-    };
+    .catch(error => console.log('error', error));
+
 
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
@@ -46,27 +39,41 @@ if (savedAirbnb.length > 0) {
 
         });
  }
-function inputcity() {
-    const information = {
+ const information = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'c1ce3ad0b5msh9cfdca5eeaa64ccp1932e1jsn6be0c2068f56',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
+function inputcity() {
+    
     var initial = 'https://airbnb19.p.rapidapi.com/api/v1/searchDestination?query='
     var country = '&country=USA'
     var url = initial + place.value + country
     fetch(url, information)
     .then(response => response.json())
-    .then(result => {console.log(result)
-        const id = result.data[0].id
-        getProperty(id)
+    .then(result => {
+        console.log(result);
+        const timer = ms => new Promise(res => setTimeout(res, ms))
+
+        async function load () { 
+        for (var i = 0; i < result.data.length; i++) {
+            const id = result.data[i].id;
+            await timer(1500);
+            getProperty(id) 
+        }
+        }
+        load();
     })
+    
     .catch(error => console.log('error', error));
     
 }
 function getProperty(identifier) {
+
+    fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information)
+
     const information2 = {
         method: 'GET',
         headers: {
