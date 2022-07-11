@@ -17,7 +17,7 @@ var requestOptions = {
    
    
 
-    fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', options)
+
     
   function cityBnb (cityEl) {
 fetch('https://airbnb19.p.rapidapi.com/api/v1/getCategory', options)
