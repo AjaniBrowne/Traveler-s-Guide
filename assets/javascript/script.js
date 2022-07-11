@@ -8,7 +8,7 @@ var requestOptions = {
     .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
-    
+
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
     airBnb = savedAirbnb;
@@ -38,35 +38,39 @@ if (savedAirbnb.length > 0) {
 
         });
  }
-function inputcity() {
-    const information = {
+ const information = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': 'c1ce3ad0b5msh9cfdca5eeaa64ccp1932e1jsn6be0c2068f56',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
+function inputcity() {
+    
     var initial = 'https://airbnb19.p.rapidapi.com/api/v1/searchDestination?query='
     var country = '&country=USA'
     var url = initial + place.value + country
     fetch(url, information)
     .then(response => response.json())
-    .then(result => {console.log(result)
-        const id = result.data[0].id
-        getProperty(id)
+    .then(result => {
+        console.log(result);
+        const timer = ms => new Promise(res => setTimeout(res, ms))
+
+        async function load () { 
+        for (var i = 0; i < result.data.length; i++) {
+            const id = result.data[i].id;
+            await timer(1500);
+            getProperty(id) 
+        }
+        }
+        load();
     })
+    
     .catch(error => console.log('error', error));
     
 }
 function getProperty(identifier) {
-    const information2 = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '3cdbe490ddmsh751dfcb32382a4fp1f05c7jsn32c79cfcfe7a',
-            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
-        }
-    };
-    fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information2)
+    fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
