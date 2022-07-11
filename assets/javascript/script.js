@@ -9,6 +9,7 @@ var requestOptions = {
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
 
+
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
     airBnb = savedAirbnb;
