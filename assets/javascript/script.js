@@ -74,7 +74,7 @@ function getProperty(identifier) {
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
-    fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information2)
+ fetch('https://airbnb19.p.rapidapi.com/api/v1/searchPropertyByPlace?id=' + identifier +'&totalRecords=10&currency=USD&adults=1', information2)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
