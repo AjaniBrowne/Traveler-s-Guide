@@ -1,4 +1,5 @@
-
+var place = document.getElementById('city')
+var bnbbtn = document.getElementById('searchBNB')
 var requestOptions = {
     method: 'GET',
   };
@@ -83,4 +84,13 @@ if (savedAirbnb.length > 0) {
 
         });
  }
-        
+ function inputcity() {
+    var initial = 'https://airbnb19.p.rapidapi.com/api/v1/searchDestination?query='
+    var country = '&country=USA'
+    var url = initial + place.value + country
+    fetch(url, information)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
+}
+bnbbtn.addEventListener('click', inputcity)
