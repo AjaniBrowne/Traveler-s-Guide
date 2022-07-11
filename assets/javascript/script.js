@@ -84,4 +84,3 @@ if (savedAirbnb.length > 0) {
         });
  }
         
- 
