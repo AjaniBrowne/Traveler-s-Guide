@@ -55,7 +55,7 @@ if (savedAirbnb.length > 0) {
  const information = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '60e9b5f1d2msh890e498e64a8199p1e18b9jsnef348e5445bc',
+            'X-RapidAPI-Key': '13114bb419msh6ffd11f9424ee39p1081cfjsn02edeab556e6',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
