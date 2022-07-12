@@ -18,7 +18,6 @@ var inputlong = document.getElementById('inputlong')
     style: `https://maps.geoapify.com/v1/styles/klokantech-basic/style.json?apiKey=${myAPIKey}`,
   });
   map.addControl(new maplibregl.NavigationControl());
-      
 
 
 
@@ -56,7 +55,7 @@ if (savedAirbnb.length > 0) {
  const information = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '60e9b5f1d2msh890e498e64a8199p1e18b9jsnef348e5445bc',
+            'X-RapidAPI-Key': '13114bb419msh6ffd11f9424ee39p1081cfjsn02edeab556e6',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
@@ -104,7 +103,6 @@ function getProperty(identifier) {
     const list = document.createElement('ul')
     const list1 = document.createElement('li')
     const list2 = document.createElement('li')
-    const hiddenid = document.createElement('li')
     
     card.classList.add('card')
     cardImage.classList.add('card-image')
@@ -119,21 +117,18 @@ function getProperty(identifier) {
     list1.classList.add('no-background')
     list2.classList.add('no-background')
     houseImg.classList.add('no-background')
-    hiddenid.classList.add('no-background')
 
     header.textContent = result.data[0].title
     subtitle.textContent = result.data[0].accessibilityLabel
     houseImg.setAttribute('src', result.data[0].images[0])
     list1.textContent = 'Beds: ' + result.data[0].beds
     list2.textContent = 'Bathrooms: ' + result.data[0].bathrooms
-    hiddenid.textContent = 'Id: ' + result.data[0].id
 
     document.getElementById('main').appendChild(card).appendChild(cardImage).appendChild(cardFigure).appendChild(houseImg)
     card.appendChild(cardContent).appendChild(media).appendChild(mediaContent).appendChild(header)
     mediaContent.appendChild(subtitle)
     cardContent.appendChild(content).appendChild(list).appendChild(list1)
     list.appendChild(list2)
-    list.appendChild(hiddenid)
     })
     
 
