@@ -198,7 +198,7 @@ span {
 .card {
     display: inline-block;
     width: 20%;
-    height: 400px;
+    height: 425px;
     margin: 40px;
 }
 .card-content {
@@ -206,7 +206,7 @@ span {
     height: 400px;
 }
 .content {
-    height: 125px;
+    height: 140px;
 }
 .title {
     font-size: 18px;
@@ -216,4 +216,10 @@ span {
 }
 #lat, #long {
     margin: 10px;
+}
+.form {
+    padding: 5px;
+    margin: 0px;
+    background: lightblue;
+    border-top: solid gray;
 }
