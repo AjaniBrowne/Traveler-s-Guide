@@ -1,14 +1,22 @@
 var place = document.getElementById('city')
 var bnbbtn = document.getElementById('searchBNB')
-var requestOptions = {
-    method: 'GET',
-  };
+/////Noor
+//var requestOptions = {
+ //   method: 'GET',
+  //};
 
-  fetch("https://api.geoapify.com/v1/geocode/search?text=38%20Upper%20Montagu%20Street%2C%20Westminster%20W1H%201LJ%2C%20United%20Kingdom&apiKey=e2c64eb127544922abc9e8cd2503fbed", requestOptions)
-    .then(response => response.json())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+  var myAPIKey = "baed8c881c17403d83dd36082a2a4b75";
 
+  var map = new maplibregl.Map({
+    container: 'my-map',
+    style: `https://maps.geoapify.com/v1/styles/klokantech-basic/style.json?apiKey=${myAPIKey}`,
+  });
+  map.addControl(new maplibregl.NavigationControl());
+      
+
+
+
+///////////////////////
 
         var savedAirbnb = localStorage.getItem("airbnb") || [];
 if (savedAirbnb.length > 0) {
@@ -42,7 +50,7 @@ if (savedAirbnb.length > 0) {
  const information = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '4ff9f951admshfb38f7a93a9fe48p1ca0fbjsncd344fb95880',
+            'X-RapidAPI-Key': 'd07f5e00d4msh65e86e1d90e3caap108062jsn259a34c0ce2d',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
@@ -77,7 +85,7 @@ function getProperty(identifier) {
     const information2 = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '3cdbe490ddmsh751dfcb32382a4fp1f05c7jsn32c79cfcfe7a',
+            'X-RapidAPI-Key': 'd07f5e00d4msh65e86e1d90e3caap108062jsn259a34c0ce2d',
             'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
         }
     };
