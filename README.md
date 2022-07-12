@@ -8,4 +8,4 @@ Technologies and libraries used: Html, Javascript, Bulma, CSS, Rapid API, Google
 Advice for taking on this project: Do your best to work as a team and integrate all members views if possible. Work as a team to generate ideas that blend well together and allow you to create the best functioning website for the company, and client. 
 Challenges: github multi branches, merge request. Api functionality, api subscription and credit guide.
 Successes: able to create a functional webpage that offers data for not only for the Best  AirBnb rentals in your area but also Great entertainment details near your location. Working well as a team to get through the big hurdles of the project and coming out with an awesome webpage that is deployed and ready to help users.
-View our deployed website below along with a screenshot of the active webpage.
+View our deployed website below along with a screenshot of the active webpage. https://ajanibrowne.github.io/Traveler-s-Guide/![Untitledwebs](https://user-images.githubusercontent.com/106093711/178559982-8198cce8-ef94-4604-b0b5-035a330ed3e0.jpg)
