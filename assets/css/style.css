@@ -1,5 +1,5 @@
 * {
-    background-color: #F5D1A1;
+    /*background-color: #F5D1A1;*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 html {
@@ -60,21 +60,14 @@ header h1{
 }
 
 .hero{
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     margin-bottom: 25px;
     border: black solid;
     background-size: cover;
     background-position: center;
 }
-/*.photo {
-    height: 50vh;
-    max-width: none;
-    margin-top: 120px;
-    border: black solid;
-    background-size: cover;
-    background-position: center;
-} */
+
 #searchGeo{
     position: absolute;
     top:50%;
@@ -105,12 +98,14 @@ header h1{
    filter: blur(2px);
 }
 
-.cityBnb {
+#city{
+    margin:10%;
+    height: 50px;
+    width: 300px;
+    margin-left: 30px;
     border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    background-color:antiquewhite;
-    justify-content: center;
+    padding: 10px;
+
 }
 #searchBNB{
 
@@ -118,13 +113,20 @@ header h1{
     height: 40px;
     border-radius: 10px;
     justify-content: center;
-    padding: 3px;
+    padding: 10px;
+    margin-left: 30px;
     background-image: url(https://recentlyheard.com/wp-content/uploads/2022/05/20-Best-Travel-Apps-In-India-To-Make-Your-Trips.png);
     background-position: center;
     background-size: cover;
 }
 button:hover{
-    color:#894049
+    scrollbar-width: ;
+}
+#my-map{
+    width:100%;
+    height: 100%;
+    margin:0;
+
 }
 footer {
     padding: 20px;
